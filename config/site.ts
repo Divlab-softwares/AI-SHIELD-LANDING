@@ -8,8 +8,8 @@ export const siteConfig = {
   links: {
     apk: "#",
     erp: "https://aishield-erp.divlabs-tech.com/",
-    documentation: "#",
-    video: "#",
+    documentation: "/documentation",
+    video: "/demo#video",
   },
   demo: {
     email: "demo@aishield.divlab",
@@ -25,4 +25,5 @@ export const siteConfig = {
     { title: "Centre de contrôle", subtitle: "Vue globale des incidents, sensibilisations recolte des donnees et utilisation des informations cles", image: "/screenshots/dashboard.png" },
     { title: "Rapports intelligents", subtitle: "Décisions guidées par l'IA et l'orchestreur intelligent.", image: "/screenshots/report.svg" },
   ],
+  videoFile: "https://youtu.be/fLCkzWtdCII?si=lCZrjRKkzuG1PDVa"
 } as const;
