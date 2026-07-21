@@ -1,10 +1,10 @@
-# AI SHIELD — Projet ARGUS
+#Projet ARGUS
 
 > Bouclier numérique citoyen développé par DIVLAB pour aider à vérifier les contenus, comprendre les risques et signaler les menaces numériques.
 
-AI SHIELD, présenté sous le nom **Projet ARGUS**, est un écosystème camerounais de cybersécurité assistée par intelligence artificielle. Il associe une application mobile Flutter, une API FastAPI, des moteurs d’analyse spécialisés et des services de persistance pour offrir au citoyen un parcours simple : **voir, vérifier, comprendre et protéger**.
+**Projet ARGUS**, est un écosystème camerounais de cybersécurité assistée par intelligence artificielle. Il associe une application mobile Flutter, une API FastAPI, des moteurs d’analyse spécialisés et des services de persistance pour offrir au citoyen un parcours simple : **voir, vérifier, comprendre et protéger**.
 
-Le dépôt contient l’application mobile et son backend. La landing page de présentation est maintenue séparément dans `ai-shield-landing`.
+Le dépôt contient l’application mobile et son backend. La landing page de présentation est maintenue séparément dans la documentation suivante `ai-shield-landing`.
 
 ## Sommaire
 
