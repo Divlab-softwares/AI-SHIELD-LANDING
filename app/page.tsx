@@ -92,7 +92,7 @@ export default function Home() {
 
       <section id="apercus" className="section-pad">
         <div className="relative mx-auto max-w-7xl px-5 lg:px-8"><Mascot name="point" className="section-mascot preview-mascot" /><div className="flex flex-col justify-between gap-6 md:flex-row md:items-end"><div><p className="kicker">Le produit en action</p><h2 className="section-title">Une expérience claire.<br />Une défense sans friction.</h2></div><p className="max-w-md text-slate-400">Application citoyenne, centre de contrôle et rapports IA : les trois interfaces d’un même bouclier numérique.</p></div>
-          <div className="mt-14 grid gap-5 md:grid-cols-3">{siteConfig.screenshots.map((shot, i) => <figure key={shot.title} className={i === 1 ? "screenshot-card md:translate-y-8" : "screenshot-card"}><Image src={shot.image} alt={shot.title} width={800} height={560} className="h-auto w-full rounded-2xl border border-white/10" /><figcaption className="mt-5"><strong className="font-display text-lg text-white">{shot.title}</strong><span className="mt-1 block text-sm text-slate-500">{shot.subtitle}</span></figcaption></figure>)}</div>
+          <div className="mt-14 grid gap-5 md:grid-cols-3">{siteConfig.screenshots.map((shot, i) => <figure key={shot.title} className={i === 1 ? "screenshot-card md:translate-y-8" : "screenshot-card"}><div className="screenshot-media"><Image src={shot.image} alt={shot.title} fill sizes="(min-width: 768px) 33vw, 100vw" className="object-contain" /></div><figcaption><strong className="font-display text-lg text-white">{shot.title}</strong><span className="mt-1 block text-sm text-slate-500">{shot.subtitle}</span></figcaption></figure>)}</div>
         </div>
       </section>
 
