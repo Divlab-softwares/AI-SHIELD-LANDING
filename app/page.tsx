@@ -38,7 +38,7 @@ export default function Home() {
           <nav className="hidden items-center gap-8 text-sm text-slate-300 md:flex">
             <a href="#solution">Mission</a><a href="#ecosysteme">Écosystème</a><a href="#apercus">Aperçus</a><a href="#divlab">DIVLAB</a>
           </nav>
-          <a href={siteConfig.links.apk} className="hidden rounded-full bg-cyan px-5 py-2.5 text-sm font-bold text-ink transition hover:bg-white sm:inline-flex">Tester l'application</a>
+          <a href={siteConfig.links.apk} className="hidden items-center gap-2 rounded-full bg-cyan px-5 py-2.5 text-sm font-bold text-ink transition hover:bg-white sm:inline-flex"><ArrowDownToLine size={17} /><span className="flex flex-col leading-tight"><span>Tester l'application</span><span className="text-[10px] font-semibold opacity-70">Poids : {siteConfig.apkSize}</span></span></a>
           <a href="#ecosysteme" className="mobile-nav-link sm:hidden">Visiter <ArrowRight size={14} /></a>
         </div>
       </header>
@@ -52,7 +52,7 @@ export default function Home() {
           </h1>
           <p className="mx-auto mt-7 max-w-2xl text-base leading-7 text-slate-400 sm:text-lg">{siteConfig.description}</p>
           <div className="mt-10 flex flex-wrap justify-center gap-3">
-            <a href={siteConfig.links.apk} className="button-primary"><ArrowDownToLine size={18} /> Télécharger l'APK</a>
+            <a href={siteConfig.links.apk} className="button-primary"><ArrowDownToLine size={18} /><span className="flex flex-col items-start leading-tight"><span>Télécharger l'APK</span><span className="text-[10px] font-semibold opacity-70">Poids : {siteConfig.apkSize}</span></span></a>
             <a href={siteConfig.links.video} className="button-secondary"><Play size={18} fill="currentColor" /> Voir la démonstration</a>
           </div>
           <div className="hero-device pointer-events-none absolute -right-8 -top-14 opacity-90"><div className="phone-float"><Image src="/screenshots/mobile.svg" alt="Application AI-SHIELD" width={235} height={470} className="rounded-[2.5rem] border-[8px] border-slate-800 shadow-2xl" /></div><Mascot name="welcome" className="absolute -bottom-20 -left-32 w-48 " /></div>
@@ -79,7 +79,7 @@ export default function Home() {
       <section id="ecosysteme" className="section-pad bg-white/[.018]">
         <div className="relative mx-auto max-w-7xl px-5 lg:px-8"><Mascot name="doublePoint" className="section-mascot ecosystem-mascot" /><div className="max-w-3xl"><p className="kicker">Votre parcours commence ici</p><h2 className="section-title">Trois portes d’entrée. Un projet complet.</h2><p className="mt-5 max-w-2xl leading-7 text-slate-400">Chaque carte ouvre une composante réellement testable du projet dans un nouvel onglet. Commencez par l’application, poursuivez avec l’ERP, puis découvrez le moteur backend.</p></div>
           <div className="mt-14 grid gap-5 lg:grid-cols-3">{stack.map(({ icon: Icon, number, title, text, tags, href }) => <a target="_blank" rel="noreferrer" href={href} key={title} className="ecosystem-card group relative overflow-hidden rounded-3xl border border-white/10 bg-panel p-8"><ExternalLink className="absolute right-6 top-6 text-slate-600 transition group-hover:text-cyan" size={20} /><span className="absolute right-6 top-4 font-display text-7xl font-bold text-white/[.035]">{number}</span><span className="icon-box"><Icon /></span><h3 className="mt-10 font-display text-2xl font-semibold text-white">{title}</h3><p className="mt-4 leading-7 text-slate-400">{text}</p><div className="mt-8 flex gap-2">{tags.map(tag => <span key={tag} className="rounded-full border border-white/10 px-3 py-1 text-xs text-slate-400">{tag}</span>)}</div></a>)}</div>
-          <div className="mt-12 flex flex-wrap gap-3">{actions.map(({ label, href, icon: Icon, primary }) => <a key={label} href={href} className={primary ? "button-primary" : "button-secondary"}><Icon size={17} />{label}</a>)}</div>
+          <div className="mt-12 flex flex-wrap gap-3">{actions.map(({ label, href, icon: Icon, primary }) => <a key={label} href={href} className={primary ? "button-primary" : "button-secondary"}><Icon size={17} /><span className="flex flex-col items-start leading-tight"><span>{label}</span>{href === siteConfig.links.apk && <span className="text-[10px] font-semibold opacity-70">Poids : {siteConfig.apkSize}</span>}</span></a>)}</div>
         </div>
       </section>
 
@@ -90,8 +90,8 @@ export default function Home() {
       </section>
 
       <section className="section-pad">
-        <div className="mx-auto grid max-w-7xl gap-6 px-5 lg:grid-cols-[1.3fr_.7fr] lg:px-8"><div className="rounded-[2rem] border border-cyan/20 bg-cyan/[.055] p-8 sm:p-12"><Bot className="text-cyan" size={36} /><h2 className="mt-8 font-display text-3xl font-semibold text-white sm:text-4xl">Prêt à découvrir AI-SHIELD ?</h2><p className="mt-4 max-w-xl text-slate-400">Testez l'application et explorez le centre de contrôle avec notre compte de démonstration.</p><div className="mt-8 flex flex-wrap gap-3"><a href={siteConfig.links.apk} className="button-primary">Tester maintenant <ArrowRight size={18} /></a><a href={siteConfig.links.erp} className="button-secondary">Ouvrir l'ERP</a></div></div>
-          <div className="rounded-[2rem] border border-white/10 bg-panel p-8 sm:p-10"><div className="flex items-center gap-3 text-cyan"><Database /><span className="font-semibold">Compte de démonstration</span></div><div className="mt-8 space-y-5"><div><span className="text-xs uppercase tracking-wider text-slate-600">Email</span><p className="mt-1 text-white">{siteConfig.demo.email}</p></div><div><span className="text-xs uppercase tracking-wider text-slate-600">Mot de passe</span><p className="mt-1 text-white">{siteConfig.demo.password}</p></div></div></div>
+        <div className="mx-auto grid max-w-7xl gap-6 px-5 lg:grid-cols-[1.3fr_.7fr] lg:px-8"><div className="rounded-[2rem] border border-cyan/20 bg-cyan/[.055] p-8 sm:p-12"><Bot className="text-cyan" size={36} /><h2 className="mt-8 font-display text-3xl font-semibold text-white sm:text-4xl">Prêt à découvrir AI-SHIELD ?</h2><p className="mt-4 max-w-xl text-slate-400">Testez l'application et explorez le centre de contrôle avec notre compte de démonstration.</p><div className="mt-8 flex flex-wrap gap-3"><a href={siteConfig.links.apk} className="button-primary"><ArrowDownToLine size={18} /><span className="flex flex-col items-start leading-tight"><span>Tester maintenant</span><span className="text-[10px] font-semibold opacity-70">Poids : {siteConfig.apkSize}</span></span></a><a href={siteConfig.links.erp} className="button-secondary">Ouvrir l'ERP</a></div></div>
+          <div className="rounded-[2rem] border border-white/10 bg-panel p-8 sm:p-10"><div className="flex items-center gap-3 text-cyan"><Database /><span className="font-semibold">Compte admin pour le jury</span></div><div className="mt-8 space-y-5"><div><span className="text-xs uppercase tracking-wider text-slate-600">Email</span><p className="mt-1 text-white">{siteConfig.demo.email}</p></div><div><span className="text-xs uppercase tracking-wider text-slate-600">Mot de passe</span><p className="mt-1 text-white">{siteConfig.demo.password}</p></div></div></div>
         </div>
       </section>
 

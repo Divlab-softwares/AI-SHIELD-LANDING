@@ -6,12 +6,17 @@ export const siteConfig = {
     "Une plateforme de cybersécurité augmentée par l'IA qui analyse, détecte et aide à neutraliser les menaces avant qu'elles ne deviennent critiques.",
   contactEmail: "divlabsoftware@gmail.com",
   links: {
-    apk: "#",
+    apk: "https://github.com/Divlab-softwares/AI-SHIELD-LANDING/releases/download/v1.0.0/app-release.apk",
     erp: "https://aishield-erp.divlabs-tech.com/",
     documentation: "/documentation",
-    video: "/demo#video",
+    video: "/demo",
   },
+  apkSize: "55 Mo",
   demo: {
+    email: "jury@divlab.com",
+    password: "jurySIN2026",
+  },
+  demo1: {
     email: "demo@aishield.divlab",
     password: "AIShieldDemo2026!",
   },
