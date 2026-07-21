@@ -6,7 +6,7 @@ export const siteConfig = {
     "Une plateforme de cybersécurité augmentée par l'IA qui analyse, détecte et aide à neutraliser les menaces avant qu'elles ne deviennent critiques.",
   contactEmail: "divlabsoftware@gmail.com",
   links: {
-    apk: "https://github.com/Divlab-softwares/AI-SHIELD-LANDING/releases/download/v1.0.0/app-release.apk",
+    apk: "https://github.com/ldivin/AI-SHIELD-LANDING/releases/download/v1.1.0/SENTINELLE.apk",
     erp: "https://aishield-erp.divlabs-tech.com/",
     documentation: "/documentation",
     video: "/demo",
@@ -30,5 +30,5 @@ export const siteConfig = {
     { title: "Centre de contrôle", subtitle: "Vue globale des incidents, sensibilisations recolte des donnees et utilisation des informations cles", image: "/screenshots/dashboard.png" },
     { title: "Rapports intelligents", subtitle: "Décisions guidées par l'IA et l'orchestreur intelligent.", image: "/screenshots/report.jpg" },
   ],
-  videoFile: "https://youtu.be/fLCkzWtdCII?si=lCZrjRKkzuG1PDVa"
+  videoFile: "/video.mp4"
 } as const;
