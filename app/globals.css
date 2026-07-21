@@ -66,6 +66,30 @@ a { transition: color .2s, background-color .2s, border-color .2s, transform .2s
 .doc-content th,.doc-content td { border:1px solid rgba(255,255,255,.08); padding:1rem; text-align:left; }
 .doc-content th { background:rgba(67,244,200,.07); color:#43f4c8; }
 .doc-content pre { overflow:auto; border:1px solid rgba(255,255,255,.09); border-radius:1rem; background:#080e16; padding:1.3rem; color:#9ffbe5; }
+.markdown-document > h1 { margin:0 0 1rem; max-width:900px; font-family:"Arial Nova","Segoe UI",sans-serif; font-size:clamp(2.7rem,7vw,5.3rem); font-weight:650; line-height:1; letter-spacing:-.055em; color:white; }
+.markdown-document > h1 + blockquote { margin-top:1.8rem; font-size:1.05rem; }
+.markdown-document h2,.markdown-document h3,.markdown-document h4 { scroll-margin-top:6.5rem; }
+.markdown-document h3 { margin:2.5rem 0 .9rem; font-size:1.35rem; }
+.markdown-document h4 { margin:2rem 0 .7rem; color:#d9e4ee; font-size:1.05rem; }
+.markdown-document a { color:#69f5d2; text-decoration:underline; text-decoration-color:rgba(105,245,210,.3); text-underline-offset:.22em; }
+.markdown-document a:hover { color:white; text-decoration-color:#69f5d2; }
+.markdown-document hr { height:1px; margin:3.5rem 0; border:0; background:linear-gradient(90deg,transparent,rgba(255,255,255,.16),transparent); }
+.markdown-document ul,.markdown-document ol { display:grid; gap:.55rem; margin:1.1rem 0; padding-left:1.5rem; }
+.markdown-document ul { list-style:disc; }
+.markdown-document ol { list-style:decimal; }
+.markdown-document li { padding-left:.2rem; }
+.markdown-document li::before { content:none; }
+.markdown-document li::marker { color:#43f4c8; font-weight:700; }
+.markdown-document li > ul,.markdown-document li > ol { margin:.55rem 0 0; }
+.markdown-document .contains-task-list { padding-left:0; list-style:none; }
+.markdown-document .task-list-item { display:flex; align-items:flex-start; gap:.65rem; padding-left:0; }
+.markdown-document input[type="checkbox"] { flex:none; width:1rem; height:1rem; margin-top:.42rem; accent-color:#43f4c8; }
+.markdown-document code { border:1px solid rgba(255,255,255,.08); border-radius:.4rem; background:rgba(255,255,255,.055); padding:.12rem .38rem; color:#9ffbe5; font-size:.88em; }
+.markdown-document pre code { border:0; background:transparent; padding:0; color:inherit; font-size:.86rem; }
+.markdown-table-wrap { max-width:100%; overflow-x:auto; border-radius:1rem; }
+.markdown-document table { min-width:680px; }
+.markdown-document img { max-width:100%; height:auto; border-radius:.75rem; }
+.markdown-document p { margin:.85rem 0; }
 .doc-module { border:1px solid rgba(255,255,255,.08); border-radius:1.2rem; background:#0b121c; padding:1.4rem; transition:.35s; }
 .doc-module:hover { transform:translateY(-5px); border-color:rgba(67,244,200,.3); }
 .doc-module svg { margin-bottom:1rem; color:#43f4c8; }
