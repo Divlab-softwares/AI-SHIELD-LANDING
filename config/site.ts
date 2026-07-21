@@ -28,7 +28,7 @@ export const siteConfig = {
   screenshots: [
     { title: "Application mobile", subtitle: "Analyse de menace en temps réel et dénonciations", image: "/screenshots/mobile.jpg" },
     { title: "Centre de contrôle", subtitle: "Vue globale des incidents, sensibilisations recolte des donnees et utilisation des informations cles", image: "/screenshots/dashboard.png" },
-    { title: "Rapports intelligents", subtitle: "Décisions guidées par l'IA et l'orchestreur intelligent.", image: "/screenshots/report.svg" },
+    { title: "Rapports intelligents", subtitle: "Décisions guidées par l'IA et l'orchestreur intelligent.", image: "/screenshots/report.jpg" },
   ],
   videoFile: "https://youtu.be/fLCkzWtdCII?si=lCZrjRKkzuG1PDVa"
 } as const;
