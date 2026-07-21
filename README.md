@@ -1,4 +1,4 @@
-# AI-SHIELD Landing Page
+# PROJET ARGUS — Landing Page
 
 Landing page Next.js + Tailwind CSS prête pour Vercel.
 

@@ -12,6 +12,6 @@ export function Particles() {
   </div>;
 }
 
-export function Mascot({ name, className = "", label = "Mascotte AI-SHIELD" }: { name: string; className?: string; label?: string }) {
+export function Mascot({ name, className = "", label = "Mascotte ARGUS" }: { name: string; className?: string; label?: string }) {
   return <Image unoptimized src={`/animations/mascot/${name}.webp`} alt={label} width={240} height={240} className={`mascot ${className}`} />;
 }

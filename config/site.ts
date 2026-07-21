@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "AI-SHIELD",
+  name: "ARGUS",
   eyebrow: "Projet Hackathon - SIN 2026",
   headline: "L'intelligence qui protège votre monde numérique.",
   description:
