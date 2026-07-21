@@ -26,7 +26,7 @@ export const siteConfig = {
     { name: "Membre 3", role: "Design & Cybersecurity" },
   ],
   screenshots: [
-    { title: "Application mobile", subtitle: "Analyse de menace en temps réel et dénonciations", image: "/screenshots/mobile.svg" },
+    { title: "Application mobile", subtitle: "Analyse de menace en temps réel et dénonciations", image: "/screenshots/mobile.jpg" },
     { title: "Centre de contrôle", subtitle: "Vue globale des incidents, sensibilisations recolte des donnees et utilisation des informations cles", image: "/screenshots/dashboard.png" },
     { title: "Rapports intelligents", subtitle: "Décisions guidées par l'IA et l'orchestreur intelligent.", image: "/screenshots/report.svg" },
   ],
