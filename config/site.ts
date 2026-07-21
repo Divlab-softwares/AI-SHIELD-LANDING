@@ -6,7 +6,7 @@ export const siteConfig = {
     "Une plateforme de cybersécurité augmentée par l'IA qui analyse, détecte et aide à neutraliser les menaces avant qu'elles ne deviennent critiques.",
   contactEmail: "divlabsoftware@gmail.com",
   links: {
-    apk: "https://github.com/ldivin/AI-SHIELD-LANDING/releases/download/v1.1.0/SENTINELLE.apk",
+    apk: "https://github.com/Divlab-softwares/AI-SHIELD-LANDING/releases/download/v1.1.0/SENTINELLE.apk",
     erp: "https://aishield-erp.divlabs-tech.com/",
     documentation: "/documentation",
     video: "/demo",
